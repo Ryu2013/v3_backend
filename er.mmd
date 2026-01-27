@@ -1,0 +1,30 @@
+erDiagram
+  direction TB
+
+  user {
+    int uuid PK ""
+    int shift_id FK ""
+  }
+
+  shift_type {
+    int uuid PK ""
+    string shift_type ""
+  }
+
+  name {
+    int uuid PK ""
+    string name ""
+  }
+
+  shift {
+    int uuid PK ""
+    int shift_type_id FK ""
+    int name_id FK ""
+    date date ""
+    time starttime ""
+    time endtime ""
+  }
+
+  shift ||--|{ user : ""
+  shift_type o|--o{ shift : ""
+  name o|--o{ shift : ""

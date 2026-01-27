@@ -1,18 +1,24 @@
-# v3_backend
-「ケアシフト」バージョン3のバックエンドリポジトリ
+# README
 
-## 概要
-バージョン2では、「料金が高すぎる」「機能がニッチ過ぎる」と言ったご意見があり、本バージョンではサブスクリプション機能を無くし無料に、またより幅広い層に使って頂けるよう最大限シンプルな物を目指し、シフト作成アプリのデフォルトスタンダードを目指す
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-## 実現方法
-料金が高すぎる→無料にしまずは、使って頂けるサービスを目指す
-機能がニッチ過ぎる→あえてチャット機能や勤怠管理機能を全て無くし、シフト作成機能に限定。より多くの事業へ対応可能なアプリケーションを目指す
+Things you may want to cover:
 
-## 使用技術
-- インフラ本番: AWS(EC2,MYSQL,S3,CF)
-- インフラ開発: Docker
-- ci/cd:  GitHubAction
-- back: Ruby on Rails
-- front: React TS vite
-- デザイン: Figma
-- ER: Mermaid
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
