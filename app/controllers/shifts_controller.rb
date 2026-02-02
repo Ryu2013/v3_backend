@@ -4,8 +4,7 @@ class ShiftsController < ApplicationController
   # GET /shifts
   def index
     @shifts = Shift.all
-
-    render json: @shifts
+    render json: @shifts, include: [:name, :shift_type]
   end
 
   # GET /shifts/1
@@ -27,7 +26,7 @@ class ShiftsController < ApplicationController
   # PATCH/PUT /shifts/1
   def update
     if @shift.update(shift_params)
-      render json: @shift
+      render json: @shift, include: [:name, :shift_type]
     else
       render json: @shift.errors, status: :unprocessable_content
     end
